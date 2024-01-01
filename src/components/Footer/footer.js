@@ -49,15 +49,18 @@ export const Footer = () => {
               {" "}
               Contact Us
             </Typography>
-            <a
+            <p
               role="button"
               onClick={(e) => {
                 openGoogleMaps();
               }}
               style={{ cursor: "pointer" }}
             >
-              <Typography variant="h6" sx={{...footerStyles.subTypographyStyles,marginTop:"15px"}}>
-              <b>Solis Green Energy Solutions</b>
+              <Typography
+                variant="h6"
+                sx={{ ...footerStyles.subTypographyStyles, marginTop: "15px" }}
+              >
+                <b>Solis Green Energy Solutions</b>
               </Typography>
               <Typography sx={footerStyles.subTypographyStyles}>
                 <br></br>Mini Kristal Arcade
@@ -68,7 +71,7 @@ export const Footer = () => {
                 <br></br>
                 <br></br>
               </Typography>
-            </a>
+            </p>
           </Box>
         </Grid>
 
@@ -101,7 +104,9 @@ export const Footer = () => {
           <Link style={footerStyles.linkStyles}>BER Assessment</Link> */}
           {/* <Link style={footerStyles.linkStyles}>Shipping Policy</Link> */}
 
-          <Link to="/contacts" style={footerStyles.linkStyles}>Reach us</Link>
+          <Link to="/contacts" style={footerStyles.linkStyles}>
+            Reach us
+          </Link>
           <Link style={footerStyles.linkStyles}>Terms & Conditions</Link>
           <Link style={footerStyles.linkStyles}>Privacy & Cookies policy</Link>
         </Grid>
@@ -118,68 +123,80 @@ export const Footer = () => {
         </Box>
       </Grid>
       <Grid sx={footerStyles.socialMediaGrid}>
-      <Typography sx={footerStyles.socialSubTypographyStyles}>
-              <a
-                role="button"
-                style={{ cursor: "pointer" }}
-                onClick={(e) => {
-                  composeEmail();
-                }}
-              >
-                <span
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    marginBottom: "10px",
-                  }}
-                >
-                  <img src={gmailIcon} style={footerStyles.imageIconStyle} />
-                  &nbsp;&nbsp;<b>Email:&nbsp;</b>
-                  solisgreenenergysolutions@gmail.com
-                </span>
-              </a>
-            </Typography>
-            <Typography sx={footerStyles.socialSubTypographyStyles}>
-              <a
-                role="button"
-                style={{ cursor: "pointer" }}
-                onClick={(e) => {
-                  openWhatsApp();
-                }}
-              >
-                {" "}
-                <span
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    marginBottom: "10px",
-                  }}
-                >
-                  <img src={whatsAppIcon} style={footerStyles.imageIconStyle} />
-                  &nbsp;&nbsp; <b>WhatsApp:&nbsp;</b> +91 8301849474
-                </span>
-              </a>
-            </Typography>
-            <Typography sx={footerStyles.socialSubTypographyStyles}>
-              <a
-                role="button"
-                style={{ cursor: "pointer" }}
-                onClick={(e) => {
-                  openDialer();
-                }}
-              >
-                <span
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    marginBottom: "10px",
-                  }}
-                >
-                  <img src={phoneIcon} style={footerStyles.imageIconStyle} />
-                  &nbsp;&nbsp; <b>Quick Contact Phone:&nbsp;</b> +91 8301849474
-                </span>
-              </a>
-            </Typography>
+        <Typography sx={footerStyles.socialSubTypographyStyles}>
+          <p
+            role="button"
+            style={{ cursor: "pointer" }}
+            onClick={(e) => {
+              composeEmail();
+            }}
+          >
+            <span
+              style={{
+                display: "flex",
+                alignItems: "center",
+                marginBottom: "10px",
+              }}
+            >
+              <img
+                src={gmailIcon}
+                style={footerStyles.imageIconStyle}
+                alt="icon"
+              />
+              &nbsp;&nbsp;<b>Email:&nbsp;</b>
+              solisgreenenergysolutions@gmail.com
+            </span>
+          </p>
+        </Typography>
+        <Typography sx={footerStyles.socialSubTypographyStyles}>
+          <p
+            role="button"
+            style={{ cursor: "pointer" }}
+            onClick={(e) => {
+              openWhatsApp();
+            }}
+          >
+            {" "}
+            <span
+              style={{
+                display: "flex",
+                alignItems: "center",
+                marginBottom: "10px",
+              }}
+            >
+              <img
+                src={whatsAppIcon}
+                style={footerStyles.imageIconStyle}
+                alt="icon"
+              />
+              &nbsp;&nbsp; <b>WhatsApp:&nbsp;</b> +91 8301849474
+            </span>
+          </p>
+        </Typography>
+        <Typography sx={footerStyles.socialSubTypographyStyles}>
+          <p
+            role="button"
+            style={{ cursor: "pointer" }}
+            onClick={(e) => {
+              openDialer();
+            }}
+          >
+            <span
+              style={{
+                display: "flex",
+                alignItems: "center",
+                marginBottom: "10px",
+              }}
+            >
+              <img
+                src={phoneIcon}
+                style={footerStyles.imageIconStyle}
+                alt="icon"
+              />
+              &nbsp;&nbsp; <b>Quick Contact Phone:&nbsp;</b> +91 8301849474
+            </span>
+          </p>
+        </Typography>
       </Grid>
       <Grid sx={footerStyles.copyRightGridStyles}>
         <p>© 2023 Solis Green Energy. All Rights are Reserved.</p>

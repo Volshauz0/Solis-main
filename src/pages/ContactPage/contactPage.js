@@ -42,7 +42,7 @@ export const ContactPage = () => {
       <Box sx={contactPageStyle.contactBoxStyle}>
         <Box sx={contactPageStyle.contactHeaderBox}>Contact Us</Box>
         <Box sx={contactPageStyle.contactDataBox}>
-          <a
+          <p
             role="button"
             onClick={(e) => {
               openGoogleMaps();
@@ -73,9 +73,9 @@ export const ContactPage = () => {
               <br></br>
               <br></br>
             </Typography>
-          </a>
+          </p>
           <Typography sx={contactPageStyle.typographyStyles}>
-            <a
+            <p
               role="button"
               onClick={(e) => {
                 composeEmail();
@@ -84,14 +84,18 @@ export const ContactPage = () => {
             >
               {" "}
               <span style={{ display: "flex", alignItems: "center" }}>
-                <img src={gmailIcon} style={contactPageStyle.imageIconStyle} alt="icon"/>
+                <img
+                  src={gmailIcon}
+                  style={contactPageStyle.imageIconStyle}
+                  alt="icon"
+                />
                 &nbsp;&nbsp;<b>Email:&nbsp;</b>{" "}
                 solisgreenenergysolutions@gmail.com
               </span>
-            </a>
+            </p>
           </Typography>
           <Typography sx={contactPageStyle.typographyStyles}>
-            <a
+            <p
               role="button"
               onClick={(e) => {
                 openWhatsApp();
@@ -106,10 +110,10 @@ export const ContactPage = () => {
                 />
                 &nbsp;&nbsp; <b>WhatsApp:&nbsp;</b> +91 8301849474
               </span>
-            </a>
+            </p>
           </Typography>
           <Typography sx={contactPageStyle.typographyStyles}>
-            <a
+            <p
               role="button"
               onClick={(e) => {
                 openDialer();
@@ -118,10 +122,14 @@ export const ContactPage = () => {
             >
               {" "}
               <span style={{ display: "flex", alignItems: "center" }}>
-                <img src={phoneIcon} style={contactPageStyle.imageIconStyle}  alt="icon"/>
+                <img
+                  src={phoneIcon}
+                  style={contactPageStyle.imageIconStyle}
+                  alt="icon"
+                />
                 &nbsp;&nbsp; <b>Quick Contact Phone:&nbsp;</b>+91 8301849474
               </span>
-            </a>
+            </p>
           </Typography>
         </Box>
       </Box>

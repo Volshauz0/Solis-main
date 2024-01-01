@@ -55,6 +55,7 @@ export default function MainModal(props) {
         <img
           src={offer}
           style={{ width: "100%", height: "100%", objectFit: "contain" }}
+          alt="offer"
         />
       </Button>
       <Modal

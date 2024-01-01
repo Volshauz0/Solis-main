@@ -3,7 +3,7 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
 import Divider from "@mui/material/Divider";
-import Drawer from "@mui/material/Drawer";
+// import Drawer from "@mui/material/Drawer";
 import { styled } from "@mui/material/styles";
 import { grey } from "@mui/material/colors";
 import IconButton from "@mui/material/IconButton";
@@ -102,7 +102,7 @@ export function Header(props) {
       >
         <Toolbar sx={headerStyles.toolBarStyles}>
           <Box sx={headerStyles.logoBoxStyles}>
-            <a
+            <p
               onClick={(e) => {
                 e.preventDefault();
                 navigate("/");
@@ -117,7 +117,7 @@ export function Header(props) {
                 width={matches ? "70px" : "130px"}
                 height={matches ? "70px" : "120px"}
               ></img>
-            </a>
+            </p>
           </Box>
           <IconButton
             color="inherit"
